@@ -32,9 +32,9 @@ The study answers three core questions:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  1. 💰 What socio-economic factors determine vendor income? │
-│  2. 🌍 Are migration patterns random or structured?         │
-│  3. 👥 What drives daily customer footfall?                 │
+│  1. 💰 What socio-economic factors determine vendor income?  │
+│  2. 🌍 Are migration patterns random or structured?          │
+│  3. 👥 What drives daily customer footfall?                  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -53,7 +53,22 @@ The study answers three core questions:
 
 ## 🗂️ Dataset
 
+### Survey Design
+
 ```
+                    Mumbai Street Vendors Survey
+                    ─────────────────────────────
+                         400 Total Vendors
+                              │
+          ┌───────────────────┼───────────────────┐
+          │                   │                   │
+    Western Line        Central Line       Harbour Line
+    (High footfall)   (Mixed income)    (Lower income)
+          │
+    Trans Harbour Line
+    (Peripheral zone)
+```
+
 > **Sampling Method:** Stratified random sampling across 4 railway lines to ensure geographic representation
 
 ### Feature Categories
@@ -257,7 +272,6 @@ Raw Survey Data (400 vendors)
 
 ## 📁 Project Structure
 
-blackbook (1).docx
 ```
 street-vendors-mumbai/
 │
@@ -315,6 +329,4 @@ Mumbai, Maharashtra, India
 
 *Built with ❤️ using Python, R, and a passion for turning data into decisions*
 
-</div>
-
-     
+</div>  
