@@ -32,9 +32,9 @@ The study answers three core questions:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  1. 💰 What socio-economic factors determine vendor income?  │
-│  2. 🌍 Are migration patterns random or structured?          │
-│  3. 👥 What drives daily customer footfall?                  │
+│  1. 💰 What socio-economic factors determine vendor income? │
+│  2. 🌍 Are migration patterns random or structured?         │
+│  3. 👥 What drives daily customer footfall?                 │
 └─────────────────────────────────────────────────────────────┘
 ```
 
