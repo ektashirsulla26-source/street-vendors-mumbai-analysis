@@ -56,94 +56,47 @@ The study answers three core questions:
 ### Survey Design
 
 ```
-<!-- Survey Structure Diagram -->
-<div align="center">
-```svg
-<svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg">
+mermaid
+flowchart TD
+    A["🗺️ Mumbai Street Vendors Survey
+    ────────────────────────────
+    400 Vendors · Stratified Sampling"]
 
-  <!-- Root Node -->
-  <rect x="220" y="20" width="240" height="56" rx="12" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-  <text x="340" y="43" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">Mumbai street vendors survey</text>
-  <text x="340" y="62" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">400 vendors · stratified sampling</text>
+    A --> B["🔵 Western Line
+    ─────────────────
+    High Footfall Zone
+    ~120 vendors · 30%"]
 
-  <!-- Connector from root down -->
-  <line x1="340" y1="76" x2="340" y2="110" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+    A --> C["🟢 Central Line
+    ─────────────────
+    Mixed Income Zone
+    ~100 vendors · 25%"]
 
-  <!-- Horizontal splitter line -->
-  <line x1="100" y1="110" x2="580" y2="110" stroke="#B4B2A9" stroke-width="0.5"/>
+    A --> D["🟡 Harbour Line
+    ─────────────────
+    Lower Income Zone
+    ~100 vendors · 25%"]
 
-  <!-- 4 vertical connectors down to line boxes -->
-  <line x1="100" y1="110" x2="100" y2="144" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
-  <line x1="247" y1="110" x2="247" y2="144" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
-  <line x1="433" y1="110" x2="433" y2="144" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
-  <line x1="580" y1="110" x2="580" y2="144" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+    A --> E["🟣 Trans Harbour Line
+    ─────────────────────
+    Peripheral Zone
+    ~80 vendors · 20%"]
 
-  <!-- Western Line -->
-  <rect x="30" y="144" width="140" height="60" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
-  <text x="100" y="167" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">Western line</text>
-  <text x="100" y="187" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#185FA5">High footfall</text>
+    B --> F["📊 Combined Dataset
+    ───────────────────────────────
+    400 Vendors · 53 Features
+    Demographics · Income · Migration · Footfall"]
 
-  <!-- Central Line -->
-  <rect x="177" y="144" width="140" height="60" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-  <text x="247" y="167" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Central line</text>
-  <text x="247" y="187" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Mixed income</text>
+    C --> F
+    D --> F
+    E --> F
 
-  <!-- Harbour Line -->
-  <rect x="363" y="144" width="140" height="60" rx="10" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-  <text x="433" y="167" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#633806">Harbour line</text>
-  <text x="433" y="187" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">Lower income</text>
-
-  <!-- Trans Harbour Line -->
-  <rect x="510" y="144" width="140" height="60" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-  <text x="580" y="167" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#3C3489">Trans harbour</text>
-  <text x="580" y="187" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Peripheral zone</text>
-
-  <!-- Connectors to sample size boxes -->
-  <line x1="100" y1="204" x2="100" y2="238" stroke="#888780" stroke-width="0.8" marker-end="url(#arrow)"/>
-  <line x1="247" y1="204" x2="247" y2="238" stroke="#888780" stroke-width="0.8" marker-end="url(#arrow)"/>
-  <line x1="433" y1="204" x2="433" y2="238" stroke="#888780" stroke-width="0.8" marker-end="url(#arrow)"/>
-  <line x1="580" y1="204" x2="580" y2="238" stroke="#888780" stroke-width="0.8" marker-end="url(#arrow)"/>
-
-  <!-- Sample size boxes -->
-  <rect x="44" y="238" width="112" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
-  <text x="100" y="258" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">~120 vendors</text>
-  <text x="100" y="272" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#185FA5">30% of sample</text>
-
-  <rect x="191" y="238" width="112" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-  <text x="247" y="258" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041">~100 vendors</text>
-  <text x="247" y="272" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">25% of sample</text>
-
-  <rect x="377" y="238" width="112" height="44" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-  <text x="433" y="258" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#633806">~100 vendors</text>
-  <text x="433" y="272" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">25% of sample</text>
-
-  <rect x="524" y="238" width="112" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-  <text x="580" y="258" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">~80 vendors</text>
-  <text x="580" y="272" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">20% of sample</text>
-
-  <!-- Converging lines to final node -->
-  <line x1="100" y1="282" x2="340" y2="316" stroke="#B4B2A9" stroke-width="0.5"/>
-  <line x1="247" y1="282" x2="340" y2="316" stroke="#B4B2A9" stroke-width="0.5"/>
-  <line x1="433" y1="282" x2="340" y2="316" stroke="#B4B2A9" stroke-width="0.5"/>
-  <line x1="580" y1="282" x2="340" y2="316" stroke="#B4B2A9" stroke-width="0.5"/>
-  <line x1="340" y1="316" x2="340" y2="336" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
-
-  <!-- Final combined dataset node -->
-  <rect x="180" y="336" width="320" height="60" rx="12" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-  <text x="340" y="358" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#712B13">Combined dataset — 400 vendors</text>
-  <text x="340" y="378" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#993C1D">53 features · demographics, income, migration, footfall</text>
-
-  <!-- Arrow marker definition -->
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </marker>
-  </defs>
-
-</svg>
-```
-
-</div>
+    style A fill:#F1EFE8,stroke:#5F5E5A,color:#2C2C2A
+    style B fill:#E6F1FB,stroke:#185FA5,color:#0C447C
+    style C fill:#E1F5EE,stroke:#0F6E56,color:#085041
+    style D fill:#FAEEDA,stroke:#854F0B,color:#633806
+    style E fill:#EEEDFE,stroke:#534AB7,color:#3C3489
+    style F fill:#FAECE7,stroke:#993C1D,color:#712B13
 ```
 
 > **Sampling Method:** Stratified random sampling across 4 railway lines to ensure geographic representation
