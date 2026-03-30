@@ -53,52 +53,7 @@ The study answers three core questions:
 
 ## 🗂️ Dataset
 
-### Survey Design
-
 ```
-mermaid
-flowchart TD
-    A["🗺️ Mumbai Street Vendors Survey
-    ────────────────────────────
-    400 Vendors · Stratified Sampling"]
-
-    A --> B["🔵 Western Line
-    ─────────────────
-    High Footfall Zone
-    ~120 vendors · 30%"]
-
-    A --> C["🟢 Central Line
-    ─────────────────
-    Mixed Income Zone
-    ~100 vendors · 25%"]
-
-    A --> D["🟡 Harbour Line
-    ─────────────────
-    Lower Income Zone
-    ~100 vendors · 25%"]
-
-    A --> E["🟣 Trans Harbour Line
-    ─────────────────────
-    Peripheral Zone
-    ~80 vendors · 20%"]
-
-    B --> F["📊 Combined Dataset
-    ───────────────────────────────
-    400 Vendors · 53 Features
-    Demographics · Income · Migration · Footfall"]
-
-    C --> F
-    D --> F
-    E --> F
-
-    style A fill:#F1EFE8,stroke:#5F5E5A,color:#2C2C2A
-    style B fill:#E6F1FB,stroke:#185FA5,color:#0C447C
-    style C fill:#E1F5EE,stroke:#0F6E56,color:#085041
-    style D fill:#FAEEDA,stroke:#854F0B,color:#633806
-    style E fill:#EEEDFE,stroke:#534AB7,color:#3C3489
-    style F fill:#FAECE7,stroke:#993C1D,color:#712B13
-```
-
 > **Sampling Method:** Stratified random sampling across 4 railway lines to ensure geographic representation
 
 ### Feature Categories
